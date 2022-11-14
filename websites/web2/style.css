@@ -1,0 +1,216 @@
+html, body
+{
+    
+	padding:0px;
+	margin:0px;
+	transition: 0.4s;
+}
+body{
+	
+	background-color:white;
+	text-align:center;
+}
+#contain{
+	height: 100%;
+	display: grid;
+	grid-template-columns: 25% auto 25%;
+	grid-template-rows: 10% auto auto auto auto;	
+	grid-template-areas:
+						"header header header"
+						"empty text side"
+						"empty text side"
+						"empty pic side"
+						"empty ani side";
+
+	grid-column-gap: 15px;
+	grid-row-gap:15px;
+	box-sizing: border-box;
+	padding:15px;
+	
+	
+}
+#title {
+	
+	grid-area:header;
+	font-size-adjust:0.21;
+	font-size:22px;
+	text-align:center;
+}
+
+#text{
+	
+	grid-area:text;
+	padding:10px;
+	font-size:18px;
+	display: inline-block;
+	text-align:left;
+	
+}
+#button{
+	grid-area:side;
+	list-style-position: inside;
+	padding-top:20px;
+
+}
+#button button{
+	list-style:none;
+	display: inline-block;
+	width:100%;
+	text-align: center;
+	padding: 0;
+	min-width:100px;
+	max-width:200px;
+	font-style:bold;
+	padding:15px;
+	right:20px;
+	margin:15px;
+	list-style-position:inside;
+	color:white;
+    border: 5px solid gray;
+	background-color:black;
+	transition: 0.4s;
+}
+
+#button button:hover,
+#demo:hover{
+	background-color:silver;
+	color:black;
+	border: 5px solid black;
+}
+
+#demo {
+	
+	list-style:none;
+	display: inline-block;
+	width:100%;
+	text-align: center;
+	padding: 0;
+	min-width:100px;
+	max-width:200px;
+	font-style:bold;
+	padding:15px;
+	right:20px;
+	margin:15px;
+	list-style-position:inside;
+	color:white;
+    border: 5px solid gray;
+	background-color:black;
+	transition: 0.4s;
+}
+
+.pics{
+	
+	grid-area:pic;
+	overflow:hidden;
+	transition: 1s;
+	min-height:250px;
+	
+}
+.pics .pic{	
+    max-width: 100%;
+	margin-bottom:15px;
+	display:none;
+	transition: 1s;
+
+}
+a{
+	text-decoration: none; 
+     
+}
+#ani {
+	grid-area:ani;
+	overflow:hidden;
+}
+
+#svg{
+	width:100%;
+	overflow:hidden;
+}
+#footer{
+
+	font-size:12px;	
+	bottom: 0; 
+	border-top: 5px solid gray;
+	width: 90%; 
+	height:35px;	
+	text-align:center;
+	display: inline-block;
+}
+#footer ul{
+	margin: 0;
+	padding: 0;
+
+}
+#footer li{
+	display: inline-block;
+	float: none;
+	margin-left: 20px;
+	margin-right:20px;
+	padding-top:6px;
+	margin-bottom:5px;
+	
+}
+
+
+@media screen and (max-width: 70em) {
+	#contain{
+	height: 100%;
+	display: grid;
+	grid-template-columns: 10% auto 150px ;
+	grid-template-rows: 10% auto auto auto auto;	
+	grid-template-areas:
+						"header header header "
+						"empty text side "
+						"empty text side "
+						"empty pic side "
+						"empty ani side";
+
+	grid-column-gap: 15px;
+	grid-row-gap:15px;
+	box-sizing: border-box;
+	padding:15px;			
+	}
+	
+	#button button{
+	
+	padding:10px;
+	margin:10px;
+	max-width:100px;
+
+	}
+	
+		
+}
+@media screen and (max-width: 50em) {
+	#contain{	
+	grid-template-columns: auto;
+	grid-template-rows: 100px auto auto 200px auto;	
+	grid-template-areas:
+						"header"
+						"side"
+						"pic"
+						"text"
+						"text"
+						"ani";	 	
+	}
+
+	#button{
+	max-width:none;
+	display: inline-block;
+	text-align:center;
+	
+	}
+	
+	#button button{
+	padding:8px;
+	margin:1px;
+	max-width:30px;
+	
+	
+	}	
+	
+}
+/*
+	
+	
+	

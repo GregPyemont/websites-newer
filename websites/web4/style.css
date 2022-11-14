@@ -1,0 +1,180 @@
+html, body
+{
+    
+	padding:0px;
+	margin:0px;
+	transition: 0.4s;
+	box-sizing: border-box;
+	
+}
+
+
+#contain{
+	width:  calc(100% - 13px);
+	height:  calc(100% - 13px);
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: 8% auto 30px;	
+	grid-template-areas: 
+						"nav1 nav2 nav3 nav4"
+						"scr scr scr scr"
+						"bot bot bot bot";	
+						
+	grid-column-gap: 0px;
+	grid-row-gap:5px;
+	box-sizing: border-box;
+	margin:5px;
+	position: fixed;
+	onerfloe:hidden;
+
+}
+
+.pics{
+	transition:1s;
+	width:100%;
+	overflow:hidden;
+	height:100%
+} 	
+#pix{
+	transition:1s;
+}
+
+#nav1{
+	grid-area:nav1;
+	position: relative;
+
+}
+#nav2{
+	grid-area:nav2;
+	position: relative;
+
+	
+}
+#nav3{
+	grid-area:nav3;
+	position: relative;
+
+	
+}
+#nav4{
+	grid-area:nav4;	
+	position: relative;
+
+	
+}
+
+button{
+	height:100%;
+	width:100%;
+	padding:0px;
+	margin:0px;
+	background-color:white;
+	border: 1px solid black;
+	font-size:25px;
+	color:white;
+	margin-bottom:0px;
+	
+	
+}
+button:hover{
+	opacity:0.7;
+	transition:1s;
+}
+#b1{
+	background: url(./pics/brick.jpg);
+	position:relative;
+	
+    color: white;
+   
+   
+}
+
+#dc{
+	list-style:none;	
+    font-size: 23px;
+	width:100%;
+	margin-top:0px;
+	margin:0px;
+	padding:0px;
+	display:none;
+	background: url(./pics/brick.jpg);
+}
+
+#dc li{
+
+	border: 2px solid black;
+	text-decoration:none;
+	padding-top:15px;
+	padding-bottom:15px;
+	text-align:center;
+}
+
+#dc li:hover{
+	opacity:0.7;
+	transition:1s;
+	color:gray;
+}
+	
+#dc li a{
+	text-decoration:none;
+	color:white;
+	overflow:hidden;
+}
+
+#nav1:hover #dc{
+	display:block;
+	transition:0.5s;
+}
+#nav2:hover #dc{
+	display:block;
+	transition:0.5s;
+}
+
+#nav3:hover #dc{
+	display:block;
+	transition:0.5s;
+}
+
+#nav4:hover #dc{
+	display:block;
+	transition:0.5s;
+}
+#b2{
+	background: url(./pics/brick.jpg);
+}
+#b3{
+	background: url(./pics/brick.jpg);
+}
+#b4{
+	background: url(./pics/brick.jpg);
+}
+
+#scr{
+	grid-area:scr;
+	background-color:black;
+	overflow:hidden;
+	
+}
+
+
+#bot{
+	grid-area:bot;
+	background: url(./pics/bk4.jpg);
+	text-align:center;
+}
+
+#bot ul{
+	margin-top:5px;
+	position:relative;
+	
+}
+#bot li {
+	color:white;
+	font-size:15px;
+	display: inline-block;
+	text-align:center;
+	padding-left:15px;
+	padding-right:15px;
+	
+	
+}
